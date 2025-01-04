@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+.logo{
+  flex: 1;
+}
+ul{
+  display: flex;
+  flex: 2
+}
+ul li{
+  list-style: none;
+}
+ul li:not(:first-child){
+  margin-left: 2rem;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+}
+.cart-Profile{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex: 1;
+}
+.cart-Profile .profile-pic{
+  margin-left: 2.5rem;
+}
+.harmburger img{
+  display: none;
+}
