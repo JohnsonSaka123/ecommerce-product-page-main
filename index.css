@@ -58,6 +58,7 @@ main{
  height: auto;
  max-width: 100%;
  margin-bottom: 1rem;
+ border-radius: 2rem;
 }
 .thumbnails{
   display: flex;
@@ -79,6 +80,7 @@ main{
 }
 h1,h2,h3,h4{
   margin: 0;
+  font-family: "Kumbh Sans", serif;
 }
 .sneaker-details h4{
   margin-bottom: 0.5rem;
@@ -89,6 +91,11 @@ h1,h2,h3,h4{
 .sneaker-details .descrip{
   margin-bottom: 1.3rem;
   margin-top: 0;
+  font-family: "Kumbh Sans", serif;
+}
+.sneaker-com{
+  font-family: "Kumbh Sans", serif;
+  color: hsl(220, 14%, 75%);
 }
 .discount , .before-discount-price{
   margin: 0;
@@ -112,9 +119,11 @@ h1,h2,h3,h4{
 .before-discount-price{
   text-decoration: line-through;
   margin-bottom: 1rem;
+  font-family: "Kumbh Sans", serif;
 }
 .buttonplusaddsub{
   display: flex;
+  border-radius: 8px;
 }
 .addsection{
   background-color: hsl(223, 64%, 98%);
@@ -125,6 +134,33 @@ h1,h2,h3,h4{
   align-items: center;
   padding-left: 0.5rem;
   border-radius: 0.3rem;
+}
+.btn-cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.5rem 0.9rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 0%);
+}
+.btn-cart img{
+  width: 1rem;
+  height: 1rem;
+}
+.btn-cart p{
+  margin: 0;
+  margin-inline-start: 8px;
+}
+
+@media(max-wdith: 375px){
+  .cart-Profile{
+  display: none;
+  }
+  .harmburger{
+    display: block;
+  }
 }
 
 
