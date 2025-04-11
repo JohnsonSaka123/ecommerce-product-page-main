@@ -12,12 +12,17 @@
 </head>
 <body>
   <header>
+    
+     <div class="harmburger">
+        <img src="./images/icon-menu.svg" alt="menu">
+      </div>
+    
     <!--logo-->
-    <div class="log0">
-      <img src="./images/logo.svg" alt="sneakers-logo">
+    <div class="brand-logo">
+      <img src="/images/logo.svg" alt="sneakers-logo">
     </div>
     <!--navigation-links-->
-    <ul>
+    <ul class="nav-lists">
       <li><a href="#">Collections</a></li>
       <li><a href="#">Men</a></li>
       <li><a href="#">Women</a></li>
@@ -26,13 +31,15 @@
     </ul>
     <!--cart and profile section-->
     <div class="cart-Profile">
-      <img src="./images/icon-cart.svg" alt="cart-icon">
+      <img src="./images/icon-cart.svg" alt="cart-icon" class="cart-icon">
       <img src="./images/image-avatar.png" alt="profile" class="profile-pic" height="30px" width="30px">
     </div>
 
-    <div class="harmburger">
-      <img src="./images/icon-menu.svg" alt="menu">
-    </div>
+   
+
+    
+
+    
   </header>
   <main>
     <div class="hero-section">
@@ -56,7 +63,7 @@
     </div>
     <div class="sneaker-details">
       <h4 class="sneaker-com">SNEAKER COMPANY</h4>
-      <h3>Fall Limited Edition Sneakers</h3>
+      <h3>Fall Limited Edition <span class="sneakers">Sneakers</span></h3>
       <p class="descrip">These low-profile sneakers are your perfect casual wear companion. Featuring a
       durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
 
@@ -74,7 +81,7 @@
           <img src="./images/icon-plus.svg" alt="">
         </div>
         <button type="submit" class="btn-cart">
-          <img src="./images/icon-cart.svg" alt="">
+          <img src="./images/icon-cart.svg" alt="" class="cart-icon">
           <p>Add to cart</p>
         </button>
       </div>

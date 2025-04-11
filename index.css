@@ -1,33 +1,38 @@
 *{
   box-sizing: border-box;
-}
-body{
   margin: 0;
+  padding: 0;
+  
 }
+
 header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
   border-bottom: 1px solid hsl(220, 14%, 75%);
+  padding-bottom: 1.5rem;
+  padding-top: 2rem;
 }
-.logo{
-  flex: 1;
+.brand-logo{
+  margin-right: 1rem;
+  
 }
-ul{
+.nav-lists{
   display: flex;
   flex: 2
 }
-ul li{
+.nav-lists li{
   list-style: none;
 }
-ul li:not(:first-child){
+.nav-lists li:not(:first-child){
   margin-left: 2rem;
 }
-ul li a{
+.nav-lists li a{
   text-decoration: none;
-  color: black;
+  color: hsl(219, 9%, 45%);
+  font-family: "Kumbh Sans", serif;
 }
 .cart-Profile{
   display: flex;
@@ -35,22 +40,27 @@ ul li a{
   justify-content: end;
   flex: 1;
 }
-.cart-Profile .profile-pic{
-  margin-left: 2.5rem;
+.cart-icon{
+  margin-right: 1rem;
 }
+
+.card-Profile .profile-pic{
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .harmburger img{
   display: none;
+  max-width: 100%;
+  height : 20px;
+  width: 20px;
 }
 main{
-  margin-left: 4rem;
-  margin-right: 4rem;
-  margin: 3rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  gap: 3.5rem;
+  padding: 5rem 6rem 6rem;
+  gap: 6rem;
 }
 
 .hero-main img{
@@ -58,7 +68,7 @@ main{
  height: auto;
  max-width: 100%;
  margin-bottom: 1rem;
- border-radius: 2rem;
+ border-radius: 1rem;
 }
 .thumbnails{
   display: flex;
@@ -87,15 +97,25 @@ h1,h2,h3,h4{
 }
 .sneaker-details h3{
   margin-bottom: 1.8rem;
+  font-weight: 700;
+  font-size: 30px;
+  word-spacing: 5px;
 }
 .sneaker-details .descrip{
   margin-bottom: 1.3rem;
   margin-top: 0;
   font-family: "Kumbh Sans", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(219, 9%, 45%);
 }
 .sneaker-com{
   font-family: "Kumbh Sans", serif;
-  color: hsl(220, 14%, 75%);
+  color: hsl(220, 13%, 13%);
+  font-weight: 400;
+}
+.sneakers{
+  display: flex;
 }
 .discount , .before-discount-price{
   margin: 0;
@@ -123,17 +143,18 @@ h1,h2,h3,h4{
 }
 .buttonplusaddsub{
   display: flex;
-  border-radius: 8px;
+  gap: 1rem;
 }
 .addsection{
   background-color: hsl(223, 64%, 98%);
-  margin-right: 2rem;
-  width: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   align-items: center;
-  padding-left: 0.5rem;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 50%;
   border-radius: 0.3rem;
+  align-items: center;
 }
 .btn-cart{
   display: flex;
@@ -144,24 +165,39 @@ h1,h2,h3,h4{
   border-radius: 8px;
   background-color: hsl(26, 100%, 55%);
   color: hsl(0, 0%, 0%);
+  width: 50%;
 }
 .btn-cart img{
   width: 1rem;
   height: 1rem;
-}
-.btn-cart p{
-  margin: 0;
-  margin-inline-start: 8px;
+  max-width: 100%;
+  align-self: flex-end;
 }
 
-@media(max-wdith: 375px){
-  .cart-Profile{
-  display: none;
+.btn-cart p{
+  font-family: "Kumbh Sans", serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media(max-width : 768px){
+  header{
+    margin: 0;
+
+  }
+  .nav-lists{
+    display: none;
   }
   .harmburger{
     display: block;
+    height: 20px;
+    width:20px;
+    background-color: ;
+  }
+  .harmburger img{
+    width: 100%;
+    height: auto;
   }
 }
-
 
 
