@@ -46,7 +46,7 @@
       <div class="hero-main-container">
         <img src="./images/icon-previous.svg" alt="Previous" class="nav-arrow prev-arrow">
         <div class="hero-main">
-          <img src="./images/image-product-1.jpg" alt="shoe-1">
+          <img src="./images/image-product-1.jpg" alt="shoe-1" class="main-product-img">
         </div>
         <img src="./images/icon-next.svg" alt="Next" class="nav-arrow next-arrow">
       </div>
@@ -98,18 +98,24 @@
   
  
 
-  <!--
+  <!-- Lightbox Modal -->
+    <div class="lightbox-overlay" id="lightbox">
+            <div class="lightbox-content">
+              <span class="close-lightbox" id="closeLightbox">&times;</span>
+              <img src="./images/image-product-1.jpg" alt="lightbox-image" id="lightbox-img">
 
- 
+              <div class="lightbox-thumbnails">
+                <img src="./images/image-product-1-thumbnail.jpg" class="thumb" data-img="./images/image-product-1.jpg">
+                <img src="./images/image-product-2-thumbnail.jpg" class="thumb" data-img="./images/image-product-2.jpg">
+                <img src="./images/image-product-3-thumbnail.jpg" class="thumb" data-img="./images/image-product-3.jpg">
+                <img src="./images/image-product-4-thumbnail.jpg" class="thumb" data-img="./images/image-product-4.jpg">
+              </div>
+            </div>
+    </div>
+
 
   
 
-  
- 
-  
-
-  0
-   -->
   
  <script src="./index.js"></script>
 </body>
