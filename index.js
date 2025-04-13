@@ -23,3 +23,7 @@ thumbnails.forEach(thumbnail => {
     lightboxImg.src = newImgSrc;
   });
 });
+
+
+let itemCount = 0;
+const unitPrice = 125;

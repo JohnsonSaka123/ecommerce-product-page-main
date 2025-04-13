@@ -169,6 +169,7 @@ h1,h2,h3,h4{
   background-color: hsl(26, 100%, 55%);
   color: hsl(0, 0%, 0%);
   width: 50%;
+  
 }
 .btn-cart img{
   width: 1rem;
@@ -247,6 +248,10 @@ h1,h2,h3,h4{
   cursor: pointer;
   color: white;
 }
+#item-count{
+  font-family: "Kumbh Sans", serif;
+  font-weight: 700;
+}
 
 
 
@@ -285,6 +290,11 @@ h1,h2,h3,h4{
     flex-direction: column;
     gap: 0;
   
+  }
+  .btn-cart{
+    -webkit-box-shadow: 1px 14px 20px 1px rgba(255, 125, 26, 0.53);
+    -moz-box-shadow: 1px 14px 20px 1px rgba(255, 125, 26, 0.53);
+    box-shadow: 1px 14px 20px 1px rgba(255, 125, 26, 0.53);
   }
   .thumbnails{
     display: none;

@@ -31,7 +31,7 @@
     </ul>
     <!--cart and profile section-->
     <div class="cart-Profile">
-      <img src="./images/icon-cart.svg" alt="cart-icon" class="cart-icon">
+      <img src="./images/icon-cart.svg" alt="cart-icon" class="cart-icon" id="cartIcon">
       <img src="./images/image-avatar.png" alt="profile" class="profile-pic" height="30px" width="30px">
     </div>
 
@@ -41,6 +41,10 @@
 
     
   </header>
+
+      <div id="cart-dropdown" class="cart-dropdown" style="display: none;">
+        <p id="cart-content">Your cart is empty.</p>
+      </div>
   <main>
     <div class="hero-section">
       <div class="hero-main-container">
@@ -80,12 +84,12 @@
       </div>
       <div class="buttonplusaddsub">
         <div class="addsection">
-          <img src="./images/icon-minus.svg" alt="">
-          <span>0</span>
-          <img src="./images/icon-plus.svg" alt="">
+          <img src="./images/icon-minus.svg" alt="" id="minus">
+          <span id="item-count">0</span>
+          <img src="./images/icon-plus.svg" alt="" id="plus">
         </div>
         <button type="submit" class="btn-cart">
-          <img src="./images/icon-cart.svg" alt="" class="cart-icon">
+          <img src="./images/icon-cart.svg" alt="" class="cart-icon" >
           <p>Add to cart</p>
         </button>
       </div>
