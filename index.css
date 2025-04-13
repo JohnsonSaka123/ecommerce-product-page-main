@@ -269,6 +269,8 @@ h1,h2,h3,h4{
   header{
     margin: 0 1rem 0;
     border: none;
+    padding-bottom: 8px;
+    padding-top: 8px;
     
   }
   .nav-lists{
@@ -335,7 +337,7 @@ h1,h2,h3,h4{
     font-size: 14px;
   }
   .sneaker-details .descrip{
-      font-size: 14px;
+      font-size: 16px;
   }
   .sneaker-details h3{
     margin-bottom: 1.2rem;
@@ -369,6 +371,10 @@ h1,h2,h3,h4{
     width: 100%;
     border-radius: 4px;
     
+  }
+  .profile-pic{
+    width: 40px;
+    height: 40px;
   }
   
 }
